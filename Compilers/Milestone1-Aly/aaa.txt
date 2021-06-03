@@ -1,0 +1,2 @@
+CharacterLiterals: ('\r' | '\c' | '\n,' | '\l' | '\f' | '\t' | '\v' | '\\' | '\"' | '\'' | '\a' |'\b' | '\e' |'\x' | DIGIT | LETTER){1} ;
+CHAR_LIT: (''')(CharacterLiterals)(''');
