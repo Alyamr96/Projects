@@ -1,0 +1,420 @@
+@import '../../styles/themes';
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '~@nebular/theme/styles/global/bootstrap/breakpoints';
+
+
+@include nb-install-component() {
+  nb-layout-column.small {
+    flex: 0.15 !important;
+  }
+
+  /deep/ .tags-input__tag a{
+    color:white;
+  }
+
+  /deep/ .leftbg{
+    background: linear-gradient(to right, 
+    #FCE307,
+    #FCE307 20%,
+    #F0F0F0 20%,
+    #F0F0F0 70%);
+    padding-top:2.25rem;
+    padding-bottom:0.75rem;
+    width:100%;
+    height:100%;
+  }
+
+
+  /deep/ .rightbg{
+    background: linear-gradient(to left, 
+    #FCE307,
+    #FCE307 20%,
+    #F0F0F0 20%,
+    #F0F0F0 70%);
+    padding-top:2.25rem;
+    padding-bottom:0.75rem;
+    width:100%;
+    height:100%;
+  }
+
+  /deep/ .topbg{
+    background: linear-gradient(to bottm, 
+    #FCE307,
+    #FCE307 30%,
+    #F0F0F0 30%,
+    #F0F0F0 70%);
+    padding-top:2.25rem;
+    padding-bottom:0.75rem;
+    width:100%;
+    height:100%;
+  }
+
+
+  nb-layout-column{
+    /deep/ .container{
+      background-color: #FFF;
+      height:100%;
+      color:black;
+      padding-top:20px; 
+      padding-left:30px;
+      padding-bottom:30px;
+    }
+    /deep/ .container h2{
+      margin-top:-40px;
+      color: #DB0C18;
+      font-size: 40px;
+      font-weight:900;
+      text-transform: uppercase;
+    }
+
+
+    /deep/ .infoRight{
+      padding-left:20px;
+      margin-left:20px;
+    }
+
+
+    /deep/ .resultDiv{
+        background-color: #FFF;
+        color:black;
+        width:95%;
+        padding-top:20px; 
+        padding-left:30px;
+        padding-bottom:10px;
+        margin: 0 auto;
+        margin-top:30px;
+        margin-bottom:40px;
+    }
+
+    /deep/ .resultDiv h2{
+      margin-top:-40px;
+      color: #DB0C18;
+      font-size: 40px;
+      font-weight:900;
+      text-transform: uppercase;
+    }
+
+    /deep/ .resultDiv .rightAligned{
+      margin-top:-40px;
+      color: #DB0C18;
+      font-size: 40px;
+      font-weight:900;
+      text-transform: uppercase;
+      text-align:right;
+      padding-right:30px;
+    }
+
+    /deep/ .resultDiv .card{
+      vertical-align: top;
+      width:300px;
+      height:350px;
+      margin:5px;
+      display: inline-block;
+      position:relative;
+      
+    }
+
+    /deep/ .resultDiv .card:hover{
+      background: #D00018;
+      color:#FFF;
+    }
+
+    /deep/ .resultDiv .card .content{
+      padding:10px;
+    }
+
+    /deep/ .resultDiv .card .coverImage{
+      width:100%;
+      height:100px;
+      overflow: hidden;
+    }
+
+    /deep/ .resultDiv .card .coverImage img{
+      margin-top:0px;
+    }
+
+    /deep/ .resultDiv h4{
+      color: #D00018;
+      font-weight:900;
+    }
+
+
+
+    /deep/ .resultDiv .card:hover h4{
+      color: #FFE302;
+      font-weight:900;
+    }
+
+    /deep/ .resultDiv .card:hover .btn-danger{
+      color: #FFE302;
+      border: 3px solid  #FFE302;
+      
+    }
+
+    /deep/ .cardBottom{
+      bottom:10px;
+      position: absolute;
+      width:100%;
+    }
+
+    /deep/ .contentToFade{
+      transition: .5s ease;
+      backface-visibility: hidden;
+
+    }
+
+    /deep/ .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /deep/ .resultDiv .card:hover .contentToFade{
+      opacity: 0.3;
+    }
+
+    /deep/ .resultDiv .card:hover .middle{
+      opacity: 1;
+    }
+
+    
+
+    /deep/ .filter{
+      text-align:center;
+    }
+
+    /deep/ .filter select{
+      margin:6px;
+      border-radius: 0px;
+      display: inline-block;
+      // background-color: transparent;
+      border: 3px solid #D00018;
+      width:200px;
+    }
+
+/deep/ .profile .uppercase{
+  text-transform: uppercase;
+}
+    /deep/ .profile .cap{
+      text-transform: capitalize;
+    }
+    /deep/ .profile .card {
+      box-shadow: 0 4px 4px 0 rgba(192, 155, 84, 0.2);
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      float: left; width: 30%;
+      overflow: hidden;
+      margin-right:20px;
+    }
+
+    /deep/ .btn-danger{
+      background-color: transparent;
+      border: 3px solid #D00018;
+      color:#D00018;
+      border-radius: 0px;
+      font-weight:900;
+    }
+
+    /deep/ .btn-danger:hover{
+      background-color: #D00018;
+      border: 3px solid #D00018;
+      color:#FFF;
+      border-radius: 0px;
+      font-weight:900;
+    }
+
+    /deep/ .profile  .title {
+      color: grey;
+      font-size: 18px;
+    }
+
+    /deep/ .profile  button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      border-radius: 0px;
+    }
+
+    /deep/ .profile  a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+    }
+
+    /deep/ .editTags{
+      display: inline-block;
+      margin-top:10px;
+    }
+
+    /deep/ .editTags button{
+      margin-top:10px;
+    }
+
+    /deep/ .profile  button:hover, a:hover {
+      opacity: 0.7;
+    }
+
+    /deep/ .tags-input__tag{
+      padding:3px 7px;
+      background-color: #DC0C18;
+      color: #FFF;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size:14px;
+      margin:2.5px 5px 2.5px 0;
+      display:inline-block;
+    
+    }
+
+    /deep/ .tags-input__tag-remove-btn {
+      color: #FFE302;
+      font-weight: 900;
+      margin: -2px;
+      font-size: 15px;
+      
+    }
+
+  }
+  
+
+  nb-sidebar.settings-sidebar {
+    $sidebar-width: 7.5rem;
+
+    transition: width 0.3s ease;
+    width: $sidebar-width;
+    overflow: hidden;
+
+    &.collapsed {
+      width: 0;
+
+      /deep/ .main-container {
+        width: 0;
+        
+
+        .scrollable {
+          width: $sidebar-width;
+          padding: 1.25rem;
+        }
+      }
+    }
+
+    /deep/ .main-container {
+      width: $sidebar-width;
+      background: nb-theme(color-bg);
+      transition: width 0.3s ease;
+      overflow: hidden;
+      
+
+      .scrollable {
+        width: $sidebar-width;
+      }
+
+      @include nb-for-theme(cosmic) {
+        background: nb-theme(layout-bg);
+      }
+    }
+  }
+
+  nb-sidebar.menu-sidebar {
+    margin-top: nb-theme(sidebar-header-gap);
+
+    /deep/ .main-container {
+      height: calc(
+        #{nb-theme(sidebar-height)} - #{nb-theme(header-height)} - #{nb-theme(
+            sidebar-header-gap
+          )}
+      ) !important;
+      border-top-right-radius: nb-theme(radius);
+      & nb-menu .menu-item .menu-icon.fa {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    /deep/ nb-sidebar-header {
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+
+    background: transparent;
+
+    .main-btn {
+      padding: 0.75rem 2.5rem;
+      margin-top: -2rem;
+      font-weight: bold;
+      transition: padding 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.48);
+
+      i {
+        font-size: 2rem;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      }
+      span {
+        padding-left: 0.25rem;
+      }
+
+      i,
+      span {
+        vertical-align: middle;
+      }
+    }
+
+    &.compacted {
+      /deep/ nb-sidebar-header {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .main-btn {
+        width: 46px;
+        height: 44px;
+        padding: 0.375rem;
+        border-radius: 5px;
+        transition: none;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xs) {
+    .main-content {
+      padding: 0.75rem !important;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    nb-sidebar.menu-sidebar {
+      margin-top: 0;
+
+      /deep/ .main-container {
+        height: calc(
+          #{nb-theme(sidebar-height)} - #{nb-theme(header-height)}
+        ) !important;
+        border-top-right-radius: 0;
+
+        .scrollable {
+          padding-top: 0;
+        }
+      }
+    }
+
+    .main-btn {
+      display: none;
+    }
+  }
+}

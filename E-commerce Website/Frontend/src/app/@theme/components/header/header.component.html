@@ -1,0 +1,23 @@
+<div class="header-container left">
+  <div class="logo-containter">
+    <!-- <a (click)="toggleSidebar()" class="navigation">
+      <i class="nb-menu"></i>
+    </a> -->
+    <div class="logo" (click)="goToHome()"><img src="/assets/riseuplogo.svg" height="40.36px" width="120px"></div>
+  </div>
+</div>
+
+
+<nb-actions size="medium" class="header-container right">
+  <nb-action>
+    <!-- <a ><span ><input  type="text" id="search_text_input" style="border-radius: 0px; padding:8px; border: 1.5px solid #d00018;" placeholder="Search Here"> <div  (click)="searchPage()" id="button-holder"><img src="/assets/search.svg"  /> </div></span></a> -->
+    <a href="#/home/"><span >Home</span></a>
+    <a href="#/search/"><span >Search</span></a>
+    <a *ngIf="adminStatus==true" href="#/admin/"><span >Admin System</span></a>
+    <a *ngIf="adminStatus==true" href="#/content/suggestedcontent"><span >Suggested</span></a>
+    <a *ngIf="loggedin==true" href="#/content/create"><span ><button class="btn btn-warning btn-sm">Add Content</button></span></a>
+    <nb-user *ngIf="loggedin==true" [nbContextMenu]="userMenu" [name]="user" (menuClick)="onMenuClick($event)"></nb-user>
+    <span><a *ngIf="loggedin==false" href="#/user/login" style="padding-right:5px">Login</a>  <a *ngIf="loggedin==false" href="#/user/register" style="padding-right:5px">Register</a></span>
+  </nb-action>
+</nb-actions>
+
